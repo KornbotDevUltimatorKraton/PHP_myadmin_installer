@@ -6,4 +6,6 @@ sudo a2enconf phpmyadmin.conf
 sudo systemctl restart apache2
 sudo systemctl reload apache2 
 sudo mysql -p -u root 
+echo "CREATE USER 'roboreactordb'@'%' IDENTIFIED BY 'Rkjl3548123#';"
+echo "GRANT ALL PRIVILEGES ON*.* TO 'roboreactordb'@'%' WITH GRANT OPTION;"
 
